@@ -1,14 +1,14 @@
 import { useSelector, useDispatch } from "react-redux";
 
-import { counterActions } from "../store/index";
+import { counterActions } from "../store/counter";
 import classes from "./Counter.module.css";
 
 // import { INCREMENT } from "../store/index";
 
 const Counter = () => {
   const dispatch = useDispatch();
-  const counter = useSelector((state) => state.counter);
-  const show = useSelector((state) => state.showCounter);
+  const counter = useSelector((state) => state.counter.counter); //the 2nd state is from the reducer and the 3rd is from what we declare from initialCounterState
+  const show = useSelector((state) => state.counter.showCounter);
 
   const incrementHandler = () => {
     // dispatch({ type: INCREMENT });
