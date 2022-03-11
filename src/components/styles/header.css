@@ -1,0 +1,49 @@
+.Header {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.Header__flag {
+  display: flex;
+  width: 100%;
+  /* align-items: center; */
+}
+
+.Header__flag--small-gray {
+  background: rgb(219, 218, 218);
+  height: 25px;
+}
+
+.Header__flag--medium-blue {
+  background: rgb(0, 134, 214);
+  height: 46px;
+}
+
+.Header__flag--large-gray {
+  height: 87px;
+
+  /* width: 100%; */
+  background: rgb(219, 218, 218);
+}
+
+.Header__logo-wrapper {
+  display: flex;
+  align-items: center;
+
+  /* width: 75.5%; */
+  width: 75.45%;
+
+  /* for 1920 x 1080
+  width: 55%; */
+
+  padding: 0 30px;
+  margin: 14px auto 0;
+}
+
+.Header__logo {
+  /* width: 8.7%; */
+  width: 8.9%;
+  height: auto;
+  z-index: 45;
+}
